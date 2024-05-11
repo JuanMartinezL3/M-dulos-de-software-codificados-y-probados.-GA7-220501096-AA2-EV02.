@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin:50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+             display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+        <h1>BIENVENIDO INICIA SESION</h1>
+        <img src="vortex.jpg" alt="Logo"/>
+        <form action="login" method="POST">
+            <input type="text" name="email" value="" />
+            <input type="password" name="password" value="" />
+            <input type="submit" value="Iniciar sesion" name="Iniciar" />
+        </form>
+         
+         </div>
+    </body>
+</html>
